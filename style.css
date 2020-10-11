@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 50px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+
+.nav-list li{
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 35px;
+    cursor: pointer;
+}
+
+.nav-list li:hover{
+    border-bottom: 2px solid black;
+    transition: all .1s ease;
+}
+
+.nav-list li:first-child{
+    border-bottom: 2px solid black;
+}
+
+.logo{
+    width: 120px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+}
+
+.box1{
+    height: 100%;
+    width: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.snack-box .title, .snack-box .price, .bucket-box .title, .bucket-box .price{
+    top: 100%;
+}
+
+.title{
+    font-family: Montserrat, sans-serif;
+    font-size: 96px;
+    font-weight: 800;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.price{
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    color: #A3080C;
+}
+
+.price span{
+    font-size: 96px;
+}
+
+.img1, .img2, .img3{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.img2, .img3{
+    top: 150%;
+}
+
+.box2{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #A3080C;
+}
+
+.info{
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    line-height: 80px;
+}
+
+.burger-info, .snack-info, .bucket-info{
+    position: absolute;
+}
+
+.snack-info, .bucket-info{
+    top: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
